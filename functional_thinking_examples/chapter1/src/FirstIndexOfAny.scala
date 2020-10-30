@@ -27,8 +27,27 @@ object FirstIndexOfAny {
   }
 
   def main(args: Array[String]): Unit = {
-    println(firstIndexOfAny("fawehglaksjhlawjeflajg", Seq('g', 'e')))
-    println(indexOfAny("fawehglaksjhlawjeflajg", Seq('g')))
+    println("boundary conditions\n================")
+    println(firstIndexOfAny("", "") match { case Some(matches) => "matches"; case None => "No values present" }, "expected No values present")
+    println(firstIndexOfAny("", "a") match { case Some(matches) => "matches"; case None => "No values present" }, "expected No values present")
+    println(firstIndexOfAny("z", "") match { case Some(matches) => "matches"; case None => "No values present" }, "expected No values present")
+    println(firstIndexOfAny("aba", "z") match { case Some(matches) => "matches"; case None => "No values present" }, "expected No values present")
+
+    println("\nfirstIndexOfAny tests\n================")
+    println(firstIndexOfAny("zzabyycdxx", "za").get, "expected: 0")
+    println(firstIndexOfAny("zzabyycdxx", "by").get, "expected: 3")
+    println(firstIndexOfAny("zzyabyycdxx", "by").get, "expected: 2")
+
+
+    println("\nindexOfAny tests\n================")
+    println(indexOfAny("zzabyycdxx", ""), "expected: []")
+    println(indexOfAny("", "za"), "expected: []")
+    println(indexOfAny("", ""), "expected: []")
+    println(indexOfAny("zzabyycdxx", "za"), "expected: [0 1 2]")
+    println(indexOfAny("zzabyycdxx", "by"), "expected: [3 4 5]")
+    println(indexOfAny("zzabyycdxx", "ax"), "expected: [2 8 9]")
+    println(indexOfAny("zxzabyycdx", "ax"), "expected: [1 3 9]")
+
   }
 
 }
