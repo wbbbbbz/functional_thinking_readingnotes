@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.stream.IntStream;
 
 public class NumberClassifierJava {
 
@@ -6,6 +7,14 @@ public class NumberClassifierJava {
 
     public NumberClassifierJava(int target){
         this.target = target;
+    }
+
+    public static IntStream factorOfNumber(int target){
+        return IntStream.range(1, target).filter(x -> target % x == 0);
+    }
+
+    public static int aliquotSumOfNumber(int target){
+        return factorOfNumber(target).sum();
     }
 
     public Set<Integer> getFactors() {
@@ -54,7 +63,9 @@ public class NumberClassifierJava {
             NumberClassifierJava ncj = new NumberClassifierJava(rd.nextInt(10000));
             System.out.println(ncj.getTarget());
             System.out.println(ncj.aliquotSum());
+            System.out.println(aliquotSumOfNumber(ncj.getTarget()));
             System.out.println(ncj.getFactors());
+            System.out.println(Arrays.toString(factorOfNumber(ncj.getTarget()).toArray()));
         }
     }
 
