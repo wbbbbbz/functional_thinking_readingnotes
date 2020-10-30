@@ -1,5 +1,4 @@
-# Functional Thinking (O'Reilly)读书笔记:closed_book:
-===================
+# Functional Thinking (O'Reilly)读书笔记:blue_book:
 
 “Functional Thinking by Neal Ford (O'Reilly). Copyright 2014 Neal Ford, 978-1-449-36551-6.”
 
