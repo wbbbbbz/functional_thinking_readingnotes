@@ -12,3 +12,4 @@
 | :--- | :--- |
 | 第1章　 | [笔记](notes\chapter1.md) |
 | 第2章　 | [笔记](notes\chapter2.md) |
+| 第3章　 | [笔记](notes\chapter3.md) |
