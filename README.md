@@ -14,3 +14,4 @@
 | 第2章 转变思维 | [第2章 转变思维](notes\chapter2.md) |
 | 第3章 权责让渡 | [第3章 权责让渡](notes\chapter3.md) |
 | 第4章 用巧不用蛮 | [第4章 用巧不用蛮](notes\chapter4.md) |
+| 第5章 演化的语言 | [第5章 演化的语言](notes\chapter4.md) |
