@@ -17,3 +17,4 @@
 | 第5章 演化的语言 | [第5章 演化的语言](notes\chapter5.md) |
 | 第6章 模式与重用 | [第6章 模式与重用](notes\chapter6.md) |
 | 第7章 现实应用 | [第7章 现实应用](notes\chapter7.md) |
+| 第8章 多语言与多范式 | [第8章 多语言与多范式](notes\chapter8.md) |
